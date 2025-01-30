@@ -1,0 +1,150 @@
+  /* Styles for light and dark themes */
+  body {
+    transition: background-color 0.3s, color 0.3s;
+
+  }
+
+  #fusionOutput {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--gray-4);
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--gray-1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #fusionOutput #fusionImage {
+    width: 288px;
+    height: 288px;
+    /* margin-bottom: 1rem; */
+    border-radius: 8px;
+    border: 2px solid var(--primary);
+  }
+
+  .fusion-details {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .fusion-details div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-3);
+    padding: 0.5rem 0;
+  }
+
+  .fusion-details div:last-child {
+    border-bottom: none;
+  }
+
+  .fusion-details div span {
+    font-weight: bold;
+  }
+
+
+  .fusion-card {
+    background: var(--card-background-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 1000px;
+  }
+  
+  .fusion-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: var(--primary);
+  }
+  
+  .fusion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .fusion-image {
+    width: 288px;
+    height: 288px;
+    object-fit: contain;
+    background-color: var(--pico-card-sectioning-background-color);
+  }
+  
+  .fusion-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  
+  .fusion-table th,
+  .fusion-table td {
+    padding: 0.75rem;
+    text-align: center;
+    border: 1px solid var(--card-border-color);
+  }
+  
+  .fusion-table th {
+    background: var(--primary);
+    color: var(--primary-inverse);
+    font-weight: bold;
+  }
+  
+  .fusion-table tbody tr:hover {
+    background: var(--card-sectionning-background-color);
+  }
+  
+  .sprite-info {
+    background: var(--card-sectionning-background-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .sprite-info h3 {
+    margin: 0 0 1rem 0;
+    color: var(--primary);
+  }
+  
+  .fusion-ids {
+    font-size: 1rem;
+    color: var(--muted-color);
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .fusion-content {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    
+    .fusion-image-container {
+      flex: 0 0 288px;
+      /* border: 1px solid gray; */
+      border-radius: .5rem;
+      /* padding: 1rem; */
+    }
+    
+    .fusion-info {
+      flex: 1;
+      padding-left: 2rem;
+    }
+  }
+
+
+  #typesElm {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .typeImage {
+    width: 96px;
+    height: 32px;
+    border-radius: 0.5rem;
+  }

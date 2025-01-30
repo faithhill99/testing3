@@ -1,0 +1,60 @@
+<article>
+    <main>
+        <h1>Contact Us</h1>
+        <hr />
+      
+        <section>
+          <h2>Email</h2>
+          <hr />
+          <p>
+            For any inquiries or feedback, please feel free to contact us via email at <a href="mailto:fusiongenhelp@gmail.com">fusiongenhelp@gmail.com</a>.
+          </p>
+        </section>
+      
+        <section>
+          <h2>Contact Form</h2>
+          <hr />
+          <form id="contactForm">
+            <div>
+              <label>Name:</label>
+              <input id="name" name="name" required="" type="text" />
+            </div>
+            <div>
+              <label>Email:</label>
+              <input id="email" name="email" required="" type="email" />
+            </div>
+            <div>
+              <label>Message:</label>
+              <textarea id="message" name="message" required="" rows="5"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </main>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const form = document.getElementById("contactForm");
+      
+          form.addEventListener("submit", function(event) {
+            event.preventDefault();
+      
+            // Simple validation
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+      
+            if (!name || !email || !message) {
+              alert("Please fill out all fields.");
+              return;
+            }
+      
+            // Send email using mailto
+            const mailtoLink = `mailto:fusiongenhelp@gmail.com?subject=Message%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+            window.location.href = mailtoLink;
+          });
+        });
+      </script>
+      
+  
+</article>
