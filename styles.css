@@ -53,6 +53,9 @@
   .menu-toggle {
     display: none;
     cursor: pointer;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 4px;
   }
 
   .menu-toggle span {
