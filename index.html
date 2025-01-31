@@ -52,6 +52,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+  
+  <body class="app">
+    <header>
+  
+<nav>
+    <div class="logo">FusionGenerato</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Blog</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('nav ul');
+      menu.classList.toggle('active');
+    }
+  </script>
+  </header>
 
 <body>
   <main class="container" style="max-width: 1000px; padding: 1rem;">
