@@ -160,19 +160,28 @@ nav ul li a:hover {
     color: var(--muted-color);
 }
 
-.footer {
+/* Footer Styles */
+footer {
     background-color: var(--card-background-color);
     color: var(--muted-color);
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    border-top: 2px solid var(--gray-4);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.footer a {
-    color: var(--primary);
+footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: blue;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
+    margin: 0 5px;
 }
 
-.footer a:hover {
+footer a:hover {
     text-decoration: underline;
 }
