@@ -53,7 +53,7 @@ nav ul li a:hover {
 .menu-toggle {
     display: none;
     cursor: pointer;
-    background: white !important; /* Ensure it's white */
+    background: white !important;
     padding: 0.5rem;
     border-radius: 4px;
 }
@@ -66,7 +66,6 @@ nav ul li a:hover {
     background: black;
 }
 
-/* Media Query for Mobile */
 @media (max-width: 768px) {
     nav {
         flex-wrap: wrap;
@@ -78,11 +77,11 @@ nav ul li a:hover {
         top: 60px;
         left: 0;
         width: 100%;
-        background: white !important; /* Set background to white */
+        background: white !important;
         display: none;
         padding: 1rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        gap: 0.5rem; /* Reduced gap for closer items */
+        gap: 0.5rem;
     }
 
     nav ul.active {
@@ -98,144 +97,82 @@ nav ul li a:hover {
     }
 }
 
-/* Fusion Output Styles */
-#fusionOutput {
-    margin-top: 2rem;
-    padding: 1rem;
-    border: 1px solid var(--gray-4);
-    border-radius: 10px;
-    text-align: center;
-    background-color: var(--gray-1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#fusionOutput #fusionImage {
-    width: 288px;
-    height: 288px;
-    border-radius: 8px;
-    border: 2px solid var(--primary);
-}
-
-.fusion-details {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.fusion-details div {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--gray-3);
-    padding: 0.5rem 0;
-}
-
-.fusion-details div:last-child {
-    border-bottom: none;
-}
-
-.fusion-details div span {
-    font-weight: bold;
-}
-
-.fusion-card {
-    background: var(--card-background-color);
+/* Blog Section Styles */
+.blog-posts-section {
+    background-color: var(--card-background-color);
+    padding: 30px;
+    border-top: 2px solid var(--gray-4);
     border-radius: 1rem;
-    padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
-    max-width: 1000px;
 }
 
-.fusion-title {
+.blog-posts-section h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
     text-align: center;
-    font-size: 1.5rem;
-    margin-top: auto;
-    margin-bottom: auto;
     color: var(--primary);
 }
 
-.fusion-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.blog-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-.fusion-image {
-    width: 288px;
-    height: 288px;
-    object-fit: contain;
+.blog-post {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--gray-1);
+    border: 1px solid var(--gray-3);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.blog-post img {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    background-color: var(--gray-2);
+}
+
+.blog-post div {
+    padding: 15px;
+    flex: 1;
     background-color: var(--pico-card-sectioning-background-color);
 }
 
-.fusion-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1.5rem;
-}
-
-.fusion-table th,
-.fusion-table td {
-    padding: 0.75rem;
-    text-align: center;
-    border: 1px solid var(--card-border-color);
-}
-
-.fusion-table th {
-    background: var(--primary);
-    color: var(--primary-inverse);
-    font-weight: bold;
-}
-
-.fusion-table tbody tr:hover {
-    background: var(--card-sectionning-background-color);
-}
-
-.sprite-info {
-    background: var(--card-sectionning-background-color);
-    padding: 1rem;
-    border-radius: 0.5rem;
-}
-
-.sprite-info h3 {
-    margin: 0 0 1rem 0;
+.blog-post h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
     color: var(--primary);
 }
 
-.fusion-ids {
+.blog-post p {
+    margin: 0;
     font-size: 1rem;
     color: var(--muted-color);
-    display: block;
-    margin-top: 0.5rem;
 }
 
-@media (min-width: 768px) {
-    .fusion-content {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .fusion-image-container {
-        flex: 0 0 288px;
-        border-radius: .5rem;
-    }
-
-    .fusion-info {
-        flex: 1;
-        padding-left: 2rem;
-    }
+.footer {
+    background-color: var(--card-background-color);
+    color: var(--muted-color);
+    text-align: center;
+    padding: 10px 0;
 }
 
-#typesElm {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+.footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.typeImage {
-    width: 96px;
-    height: 32px;
-    border-radius: 0.5rem;
+.footer a:hover {
+    text-decoration: underline;
 }
