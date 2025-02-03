@@ -1,3 +1,14 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
 /* Navbar Styles */
 nav {
     background: var(--card-background-color);
