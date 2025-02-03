@@ -8,6 +8,27 @@
 </head>
 <body>
   <header>
+    <nav>
+    <div class="logo">FusionGenerato</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Privacy Policy</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('nav ul');
+      menu.classList.toggle('active');
+    }
+  </script>
 <!-- Blog Section -->
 <section id="blog" class="section">
     <div class="container">
