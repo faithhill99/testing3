@@ -83,6 +83,7 @@ nav ul li a:hover {
     .menu-toggle {
         display: block;
     }
+}
 
 /* Blog Section */
 #blog {
@@ -160,4 +161,50 @@ nav ul li a:hover {
 .blog-post .btn:hover {
     background-color: var(--gray-4);
     transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: var(--gray-2);
+    color: var(--primary-inverse);
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid var(--gray-4);
+    width: 100%;
+    position: relative;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+    font-weight: normal;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Larger Screens Adjustments */
+@media (min-width: 1024px) {
+    .blog-post {
+        flex-direction: row;
+    }
+
+    .blog-post img {
+        width: 180px;
+    }
+
+    .table-container {
+        max-width: 80%;
+    }
+
+    table {
+        max-width: 100%;
+    }
 }
