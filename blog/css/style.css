@@ -122,15 +122,14 @@ nav ul li a:hover {
 
 /* Blog Post Styling */
 .blog-post {
-    display: flex;
-    align-items: flex-start;
-    background-color: var(--gray-1);
-    border: 1px solid var(--gray-3);
+    background: var(--gray-1);
     border-radius: 1rem;
-    overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
 }
 
 .blog-post:hover {
@@ -139,27 +138,23 @@ nav ul li a:hover {
 }
 
 .blog-post img {
-    width: 120px;
+    width: 100%;
     height: auto;
-    object-fit: cover;
-    background-color: var(--gray-2);
-}
-
-.blog-post div {
-    padding: 15px;
-    flex: 1;
-    background-color: var(--pico-card-sectioning-background-color);
+    display: block;
+    background-color: var(--gray-3);
+    border-bottom: 2px solid var(--primary);
 }
 
 .blog-post h3 {
-    margin: 0 0 10px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin: 15px 10px;
     color: var(--primary);
 }
 
 .blog-post p {
-    margin: 0;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin: 0 10px 20px;
+    line-height: 1.6;
     color: var(--muted-color);
 }
 
