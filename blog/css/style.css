@@ -146,16 +146,15 @@ nav ul li a:hover {
     border-bottom: 2px solid var(--primary);
 }
 
-/* Adjusted spacing for headings and text */
 .blog-post h3 {
     font-size: 1.4rem;
-    margin: 15px 10px 10px; /* Added bottom margin for spacing */
+    margin: 15px 10px 20px; /* Increased bottom margin to 20px */
     color: var(--primary);
 }
 
 .blog-post p {
     font-size: 0.95rem;
-    margin: 10px 10px 20px; /* Adjusted top and bottom spacing */
+    margin: 20px 10px 20px; /* Added more top margin for better separation */
     line-height: 1.6;
     color: var(--muted-color);
 }
