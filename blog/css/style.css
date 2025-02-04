@@ -117,33 +117,33 @@ nav ul li a:hover {
     justify-content: center;
 }
 
+/* Blog Section - Specific Spacing Fix */
 .blog-post {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    text-align: center;
-    margin: 10px;
-}
-
-.blog-post img {
-    width: 100%;
-    height: auto;
-    display: block;
+    padding: 20px; /* Add padding inside the blog post */
 }
 
 .blog-post h3 {
-    margin: 15px 10px; 
+    margin-top: 10px; /* Add spacing above the heading */
+    margin-bottom: 10px; /* Add spacing below the heading */
     font-size: 1.4rem;
     color: var(--primary);
 }
 
 .blog-post p {
-    margin: 0 10px 20px; 
+    margin-top: 10px; /* Add spacing above the paragraph */
+    margin-bottom: 20px; /* Add spacing below the paragraph */
     line-height: 1.6;
     font-size: 0.95rem;
     color: var(--muted-color);
+}
+
+/* Optional - Add consistent spacing between all child elements */
+.blog-post > * {
+    margin-bottom: 15px; /* Adds consistent spacing for all direct children */
+}
+
+.blog-post > *:last-child {
+    margin-bottom: 0; /* Remove margin for the last element */
 }
 
 .blog-post .btn {
