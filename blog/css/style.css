@@ -132,6 +132,11 @@ nav ul li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.blog-post div {
+    padding: 20px; /* Increased from 15px */
+    background-color: var(--pico-card-sectioning-background-color);
+}
+
 .blog-post:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
@@ -146,18 +151,18 @@ nav ul li a:hover {
 }
 
 .blog-post h3 {
-    font-size: 1.4rem;
-    margin: 15px 10px;
+    margin: 0 0 15px; /* Bottom margin added */
+    font-size: 1.5rem;
     color: var(--primary);
+    line-height: 1.3; /* Matches body line-height */
 }
 
 .blog-post p {
-    font-size: 0.95rem;
-    margin: 0 10px 20px;
-    line-height: 1.6;
+    margin: 0 0 15px; /* Bottom margin added */
+    font-size: 1rem;
     color: var(--muted-color);
+    line-height: 1.6; /* Matches body line-height */
 }
-
 /* Read More Button */
 .blog-post .btn {
     display: inline-block;
