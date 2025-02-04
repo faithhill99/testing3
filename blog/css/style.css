@@ -122,15 +122,15 @@ nav ul li a:hover {
 
 /* Blog Post Styling */
 .blog-post {
-    background: var(--gray-1);
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--gray-1);
+    border: 1px solid var(--gray-3);
     border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 300px;
-    margin: 15px; /* Proper spacing between posts */
-    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 25px; /* Increased padding for better spacing */
+    width: 100%;
 }
 
 .blog-post:hover {
@@ -139,23 +139,27 @@ nav ul li a:hover {
 }
 
 .blog-post img {
-    width: 100%;
+    width: 120px;
     height: auto;
-    display: block;
-    background-color: var(--gray-3);
-    border-bottom: 2px solid var(--primary);
+    object-fit: cover;
+    background-color: var(--gray-2);
+}
+
+.blog-post div {
+    padding: 15px;
+    flex: 1;
+    background-color: var(--pico-card-sectioning-background-color);
 }
 
 .blog-post h3 {
-    font-size: 1.4rem;
-    margin: 15px 10px 20px; /* Increased bottom margin to 20px */
+    margin: 0 0 10px;
+    font-size: 1.5rem;
     color: var(--primary);
 }
 
 .blog-post p {
-    font-size: 0.95rem;
-    margin: 20px 10px 20px; /* Added more top margin for better separation */
-    line-height: 1.6;
+    margin: 0;
+    font-size: 1rem;
     color: var(--muted-color);
 }
 
