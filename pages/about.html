@@ -1,4 +1,38 @@
-<article>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About US</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="app">
+    <header>
+  <nav>
+    <div class="logo">FusionGenerato</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Blog</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('nav ul');
+      menu.classList.toggle('active');
+    }
+  </script>
+  </header>
+
+  <article>
   <main>
     <h1>About Us</h1>
     <hr>
@@ -11,3 +45,21 @@
 </p><h3 style="text-align: left;">Get in Touch</h3><p>Do you have feedback, questions, or suggestions to make the Fusion Generator even better? We'd be thrilled to hear from you! Visit our contact page to reach out, or follow us on social media to stay updated on new features, changes, and community highlights.&nbsp;&nbsp;</p><p>We’re excited to be a part of your Pokémon journey! Start creating unique fusions by combining your two favorite Pokémon on <b>FusionGenerato.com</b> today. Don’t forget to bookmark the website for daily use and seamless access!&nbsp;&nbsp;</p><p>---&nbsp;&nbsp;</p>
 <p>Let me know if there’s anything else you’d like to add or adjust!</p>
 </article>
+
+  <footer>
+  <div>
+    <!-- Additional Footer Links -->
+    <p>
+      <a href="/privacy-policy.html">Privacy Policy</a> |
+      <a href="/about-us.html">About Us</a> |
+      <a href="/contact.html">Contact</a> |
+      <a href="/terms.html">Terms of Service</a>
+    </p>
+    <!-- Footer Content -->
+    <p>
+      © 2025 YourWebsiteName. All rights reserved.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
