@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
+
 /* Navbar Styles */
 nav {
     background: var(--card-background-color);
@@ -126,10 +127,10 @@ nav ul li a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 300px;
-    margin: 15px; /* Added proper margin */
+    margin: 15px; /* Proper spacing between posts */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 20px; /* Added padding inside the blog post */
+    padding: 25px; /* Increased padding for better spacing */
 }
 
 .blog-post:hover {
@@ -145,19 +146,21 @@ nav ul li a:hover {
     border-bottom: 2px solid var(--primary);
 }
 
+/* Adjusted spacing for headings and text */
 .blog-post h3 {
     font-size: 1.4rem;
-    margin: 15px 10px;
+    margin: 15px 10px 10px; /* Added bottom margin for spacing */
     color: var(--primary);
 }
 
 .blog-post p {
     font-size: 0.95rem;
-    margin: 15px 10px; /* Adjusted spacing around text */
+    margin: 10px 10px 20px; /* Adjusted top and bottom spacing */
     line-height: 1.6;
     color: var(--muted-color);
 }
 
+/* Read More Button */
 .blog-post .btn {
     display: inline-block;
     background-color: var(--primary);
@@ -176,8 +179,6 @@ nav ul li a:hover {
     color: blue; /* Keeps the text blue when hovered */
     transform: scale(1.05);
 }
-
-
 
 /* Footer */
 footer {
