@@ -167,19 +167,21 @@ nav ul li a:hover {
     margin: 0 auto;
   }
 
-  .next-article-container {
+  /* Button Spacing Fix */
+.next-article-container {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+    margin-top: 30px; /* Increase spacing above the button */
+    margin-bottom: 40px; /* Increase spacing below the button */
+}
 
-  .next-article-button {
+.next-article-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background: black;
     color: #fff;
-    padding: 8px 16px;
+    padding: 12px 24px; /* Slightly increased padding for better appearance */
+    margin: 20px auto; /* Ensure consistent spacing around */
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -187,49 +189,28 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     gap: 10px;
-  }
+}
 
-  .next-article-button:hover {
+.next-article-button:hover {
     background: linear-gradient(45deg, #2575fc, #6a11cb);
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  }
+}
 
-  .next-article-button svg {
-    transition: transform 0.3s ease;
-  }
-
-  .next-article-button:hover svg {
-    transform: translateX(5px);
-  }
-
-  @media (max-width: 768px) {
-    .next-article-button {
-      font-size: 16px;
-      padding: 10px 20px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .next-article-button {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  }
-</style>
-/* Footer */
+/* Footer Spacing Fix */
 footer {
     background-color: var(--gray-2);
     color: var(--primary-inverse);
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0; /* Slightly increased padding inside the footer */
+    margin-top: 40px; /* Add margin to separate footer from content above */
     border-top: 2px solid var(--gray-4);
     width: 100%;
     position: relative;
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 10px 0; /* Adjust spacing between footer paragraphs */
     font-size: 1rem;
 }
 
