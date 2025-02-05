@@ -250,58 +250,52 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Larger Screens Adjustments */
-@media (min-width: 1024px) {
-    .blog-post {
-        flex-direction: row;
-    }
-
-    .blog-post img {
-        width: 180px;
-    }
-
-    .table-container {
-        max-width: 80%;
-    }
-
-    table {
-        max-width: 100%;
-    }
-}
-
-/* Button Group Styles */
-.button-group {
+/* Button Group Styling */
+.grid {
     display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin: 20px 0;
+    gap: 0;
 }
 
-.button-group .btn {
-    padding: 10px 20px;
+.grid button {
+    width: 33%; /* Each button takes an equal width */
+    padding: 10px 0;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.button-group .btn:nth-child(1) {
-    background-color: #ff5733; /* Button 1 color */
+/* Reset Button (Secondary) */
+.secondary {
+    background-color: #ff5733; /* Red */
     color: white;
 }
 
-.button-group .btn:nth-child(2) {
-    background-color: #33b5e5; /* Button 2 color */
-    color: white;
-}
-
-.button-group .btn:nth-child(3) {
-    background-color: #4CAF50; /* Button 3 color */
-    color: white;
-}
-
-.button-group .btn:hover {
+.secondary:hover {
+    background-color: #e74c3c; /* Darker Red */
     transform: scale(1.05);
-    opacity: 0.9;
+}
+
+/* Random Button (Contrast) */
+.contrast {
+    background-color: #33b5e5; /* Blue */
+    color: white;
+}
+
+.contrast:hover {
+    background-color: #2980b9; /* Darker Blue */
+    transform: scale(1.05);
+}
+
+/* Generate Button (Primary) */
+.primary {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.primary:hover {
+    background-color: #388e3c; /* Darker Green */
+    transform: scale(1.05);
 }
