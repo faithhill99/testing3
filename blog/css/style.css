@@ -94,7 +94,9 @@ nav ul li a:hover {
 #blog {
     background-color: #f4f4f4;
     padding: 25px 0;
-    margin-top: 20px; 
+    margin-top: 20px;
+    height: 300px; /* Set background length (adjust as needed) */
+    overflow: hidden; /* Ensure extra content doesn't exceed the height */
 }
 
 #blog h2 {
