@@ -178,7 +178,7 @@ nav ul li a:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: black;
+    background: #4CAF50;
     color: #fff;
     padding: 8px 16px; /* Slightly increased padding for better appearance */
     margin: 4px auto; 
