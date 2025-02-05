@@ -174,7 +174,7 @@ nav ul li a:hover {
 
   .next-article-container {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .next-article-button {
@@ -183,7 +183,7 @@ nav ul li a:hover {
     justify-content: center;
     background: black;
     color: #fff;
-    padding: 12px 24px;
+    padding: 8px 16px;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
