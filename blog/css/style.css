@@ -203,7 +203,7 @@ footer {
     color: var(--primary-inverse);
     text-align: center;
     padding: 15px 0; /* Slightly increased padding inside the footer */
-    margin-top: 40px; /* Add margin to separate footer from content above */
+    margin-top: 0px; 
     border-top: 2px solid var(--gray-4);
     width: 100%;
     position: relative;
