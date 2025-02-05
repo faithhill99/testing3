@@ -180,7 +180,7 @@ nav ul li a:hover {
     justify-content: center;
     background: #4CAF50;
     color: #fff;
-    padding: 8px 16px; /* Slightly increased padding for better appearance */
+    padding: 6px 12px; /* Slightly increased padding for better appearance */
     margin: 4px auto; 
     text-decoration: none;
     font-size: 18px;
