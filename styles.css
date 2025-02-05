@@ -268,3 +268,40 @@ footer a:hover {
         max-width: 100%;
     }
 }
+
+/* Button Group Styles */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button-group .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-group .btn:nth-child(1) {
+    background-color: #ff5733; /* Button 1 color */
+    color: white;
+}
+
+.button-group .btn:nth-child(2) {
+    background-color: #33b5e5; /* Button 2 color */
+    color: white;
+}
+
+.button-group .btn:nth-child(3) {
+    background-color: #4CAF50; /* Button 3 color */
+    color: white;
+}
+
+.button-group .btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
