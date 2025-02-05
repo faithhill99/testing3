@@ -181,7 +181,7 @@ nav ul li a:hover {
     background: black;
     color: #fff;
     padding: 8px 16px; /* Slightly increased padding for better appearance */
-    margin: 20px auto; /* Ensure consistent spacing around */
+    margin: 4px auto; 
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
