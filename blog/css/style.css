@@ -91,6 +91,7 @@ nav ul li a:hover {
 }
 
 /* Blog Section */
+/* Blog Section */
 #blog {
     background-color: var(--card-background-color);
     padding: 15px 0;
@@ -99,20 +100,12 @@ nav ul li a:hover {
     margin: 0rem auto;
 }
 
-#blog h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #2c3e50;
-}
-
 .blog-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-
 .blog-post {
     background-color: #fff;
     border-radius: 8px;
@@ -121,36 +114,7 @@ nav ul li a:hover {
     width: 300px;
     text-align: center;
     margin: 10px;
-    padding: 20px;
-    max-width: 800px;
-    line-height: 1.6;
 }
-
-.blog-post img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    max-width: 100%;
-}
-
-.blog-post h3 {
-    margin: 15px 10px; /* Add margin for spacing */
-    font-size: 1.4rem;
-    color: var(--primary);
-    text-align: left;
-    color: #d32f2f;
-}
-
-.blog-post p {
-    text-align: justify;
-    margin: 0 10px 20px; /* Add spacing below the paragraph */
-    margin-bottom: 15px;
-    line-height: 1.6;
-    font-size: 0.95rem;
-    color: var(--muted-color);
-}
-
 .blog-post .btn {
     display: inline-block;
     background-color: #3498db;
@@ -169,11 +133,88 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Responsive article alignment styles */
-@media (max-width: 600px) {
-    .blog-post {
-        padding: 10px;
+/* Article Container */
+.article-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+/* Title Styling */
+.article-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* General Paragraph Styling */
+.article-container p {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Headings Styling */
+.article-container h2, 
+.article-container h3, 
+.article-container h4 {
+    color: #2980b9;
+    margin-top: 20px;
+}
+
+/* Adjust smaller headings */
+.article-container h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.article-container h3 {
+    font-size: 1.6rem;
+}
+
+.article-container h4 {
+    font-size: 1.4rem;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .article-container {
+        padding: 15px;
+        max-width: 95%;
     }
+
+    .article-title {
+        font-size: 2rem;
+    }
+
+    .article-container p {
+        font-size: 1rem;
+    }
+    
+    .blog-post .btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.blog-post .btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
 }
 
 /* Responsive article alignment styles */
