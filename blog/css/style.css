@@ -191,12 +191,6 @@ nav ul li a:hover {
     gap: 7px;
 }
 
-.next-article-button:hover {
-    background: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
 /* Footer Spacing Fix */
 footer {
     background-color: var(--gray-2);
