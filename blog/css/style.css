@@ -171,6 +171,23 @@ nav ul li a:hover {
     .article-container p {
         font-size: 1rem;
     }
+    
+    .blog-post .btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.blog-post .btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
 }
   
 /* Button Spacing Fix */
