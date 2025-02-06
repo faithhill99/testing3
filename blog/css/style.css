@@ -172,6 +172,7 @@ nav ul li a:hover {
 .article-container h2 {
     font-size: 2rem;
     border-bottom: 2px solid #3498db;
+    margin-top: 12px;
     padding-bottom: 5px;
 }
 
