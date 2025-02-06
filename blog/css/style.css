@@ -216,7 +216,7 @@ footer {
     background-color: var(--gray-2);
     color: var(--primary-inverse);
     text-align: center;
-    padding: 20px 0; /* Consistent padding */
+    padding: 5px 0; 
     border-top: 2px solid var(--gray-4);
     width: 100%;
     position: relative; /* Ensures the footer stays in position */
