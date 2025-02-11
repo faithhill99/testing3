@@ -225,8 +225,8 @@ tr:hover {
 /* Article Container */
 .article-container {
     max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 2px auto;
+    padding: 2px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
