@@ -243,9 +243,9 @@ tr:hover {
 .article-container h2,
 .article-container h3,
 .article-container h4 {
-    color: #2980b9;
-    margin-top: 12px; 
-    margin-bottom: 10px;
+    color: #010101;
+    margin-top: 6px; 
+    margin-bottom: 5px;
 }
 
 .article-container h2 {
