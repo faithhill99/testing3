@@ -265,7 +265,7 @@ tr:hover {
 /* Mobile Optimization */
 @media (max-width: 768px) {
     .article-container {
-        padding: 15px;
+        padding: 2px;
         max-width: 95%;
     }
 
