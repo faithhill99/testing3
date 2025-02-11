@@ -204,19 +204,22 @@ nav ul li a:hover {
     }
 }
 
-/* Footer Section */
+/*  Fixed Footer */
 footer {
     background-color: var(--gray-2);
     color: var(--primary-inverse);
     text-align: center;
-    padding: 15px 0; /* Consistent padding */
+    padding: 20px 0;
     border-top: 2px solid var(--gray-4);
     width: 100%;
-    position: relative; /* Ensures the footer stays in position */
+    display: flex;
+    justify-content: center; /* Centers footer content */
+    align-items: center;
+    flex-direction: column;
 }
 
 footer p {
-    margin: 10px 0;
+    margin: 5px 0;
     font-size: 1rem;
 }
 
@@ -229,6 +232,25 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Larger Screens Adjustments */
+@media (min-width: 1024px) {
+    .blog-post {
+        flex-direction: row;
+    }
+
+    .blog-post img {
+        width: 180px;
+    }
+
+    .table-container {
+        max-width: 80%;
+    }
+
+    table {
+        max-width: 100%;
+    }
 }
 
 /* Next Article Button */
