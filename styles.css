@@ -249,7 +249,7 @@ tr:hover {
 }
 
 .article-container h2 {
-    border-bottom: 2px solid #3498db;
+    border-bottom: 0px solid #010101;
     padding-bottom: 5px;
 }
 
