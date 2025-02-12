@@ -100,11 +100,11 @@ nav ul li a:hover {
 /* Custom Button Styles */
 button.primary {
   background-color: #4CAF50; 
-  color: white; /* Black text 
+  color: white; 
 }
 
 button.secondary {
-  background-color: #ff6666; /* Example: Red */
+  background-color: #D93526;
   color: white;
 }
 
