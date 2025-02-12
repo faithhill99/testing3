@@ -104,7 +104,7 @@ button.primary {
 }
 
 button.secondary {
-  background-color: #D93526;
+  background-color: #C52F21;
   color: white;
 }
 
@@ -123,7 +123,7 @@ button.secondary:hover {
 }
 
 button.contrast:hover {
-  background-color: #0099cc;
+  background-color: #5D6B89;
 }
 
 /* Table Section */
