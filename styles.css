@@ -99,8 +99,8 @@ nav ul li a:hover {
 }
 /* Custom Button Styles */
 button.primary {
-  background-color: #ffcc00; /* Example: Yellow */
-  color: #000; /* Black text */
+  background-color: #4CAF50; 
+  color: white; /* Black text 
 }
 
 button.secondary {
