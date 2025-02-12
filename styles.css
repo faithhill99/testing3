@@ -97,6 +97,34 @@ nav ul li a:hover {
         display: block;
     }
 }
+/* Custom Button Styles */
+button.primary {
+  background-color: #ffcc00; /* Example: Yellow */
+  color: #000; /* Black text */
+}
+
+button.secondary {
+  background-color: #ff6666; /* Example: Red */
+  color: white;
+}
+
+button.contrast {
+  background-color: #66ccff; /* Example: Light Blue */
+  color: black;
+}
+
+/* Hover Effects */
+button.primary:hover {
+  background-color: #e6b800;
+}
+
+button.secondary:hover {
+  background-color: #e60000;
+}
+
+button.contrast:hover {
+  background-color: #0099cc;
+}
 
 /* Table Section */
 .table-container {
