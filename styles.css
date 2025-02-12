@@ -99,7 +99,7 @@ nav ul li a:hover {
 }
 /* Custom Button Styles */
 button.primary {
-  background-color: #4CAF50; 
+  background-color: #398712; 
   color: white; 
 }
 
@@ -115,11 +115,11 @@ button.contrast {
 
 /* Hover Effects */
 button.primary:hover {
-  background-color: #5DD121;
+  background-color: #33790F;
 }
 
 button.secondary:hover {
-  background-color: #e60000;
+  background-color: #AF291D;
 }
 
 button.contrast:hover {
