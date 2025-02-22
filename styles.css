@@ -188,7 +188,7 @@ tr:hover {
 /* Blog Section - Adjusted */
 .blog-posts-section {
     contain: content; /* Prevents unnecessary re-renders */
-    min-height: 100vh; /* Ensures space is allocated immediately */
+    min-height: auto; /* Ensures space is allocated immediately */
     max-width: 1000px; /* Matches article container */
     margin: 10px auto; /* Matches article container */
     padding: 10px; /* Matches article container */
