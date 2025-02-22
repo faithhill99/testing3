@@ -252,25 +252,27 @@ tr:hover {
     color: var(--muted-color);
 }
 
-/* Article Container */
+/* Optimize LCP Container */
 .article-container {
+    contain: content; /* Prevents unnecessary re-renders */
+    min-height: 100vh; /* Ensures space is allocated immediately */
     max-width: 1000px;
-    margin: 2px auto;
-    padding: 2px;
+    margin: 10px auto;
+    padding: 10px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     line-height: 1.8;
 }
 
-.article-container p {
+/* LCP Element Optimization */
+.lcp-element {
     font-size: 1.1rem;
     color: #333;
-    text-align: justify;
     margin-bottom: 15px;
+    font-weight: 600; /* ✅ Makes LCP text render first */
 }
 
-/* Fix for h3 & h4 margins */
+/* Headings */
 .article-container h3,
 .article-container h4 {
     margin-top: 6px;
@@ -286,25 +288,27 @@ tr:hover {
     font-size: 1.3rem;
 }
 
-/* Responsive Adjustments */
+/* Responsive Mobile Optimizations */
 @media (max-width: 768px) {
     .article-container {
-        padding: 2px;
         max-width: 95%;
-    }
-
-    .article-title {
-        font-size: 2rem;
+        padding: 10px;
     }
 
     .article-container p {
         font-size: 1rem;
     }
 
-    .blog-post .btn {
-        padding: 10px 20px;
-        font-size: 0.9em;
+    .article-title {
+        font-size: 2rem;
     }
+}
+
+/* Faster Font Loading */
+@font-face {
+    font-family: 'YourFont';
+    src: url('your-font.woff2') format('woff2');
+    font-display: swap;
 }
 
 /* Fixed Footer */
