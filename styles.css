@@ -355,7 +355,7 @@ footer a:hover {
         max-width: 100%;
     }
 
-    .black-line {
+.black-line {
             width: 90%; /* Adjust width as needed */
             max-width: 900px; /* Limit maximum width */
             height: 2px; /* Adjust thickness */
@@ -363,4 +363,3 @@ footer a:hover {
             border: none;
             margin: 20px auto; /* Center the line */
         }
-}
